@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h3>Form webpage</h3>
+
+    <h4>This is the header</h4>
+
+    <!-- Wrapper for form elements-->
+    <form method="post" action="index.html">
+      <!-- Inputs are individual form elements -->
+      <input type="text" name="userName" placeholder="Enter Username" />
+
+      <!-- Buttons to reset, submit and do nothing-->
+      <button type="submit" name="submitBtn">Submit</button>
+      <button type="reset" name="resetBtn">Not good :(</button>
+      <button type="button" name="defaultBtn">does nothing</button>
+    </form>
+
+    <form>
+      <!-- Inputs are individual form elements -->
+      <input type="radio" name="drinkChoice" value="Coffee" /> bing
+      <input type="radio" name="drinkChoice" value="Tea" /> Tea
+      <input type="radio" name="drinkChoice" value="Water" /> Water
+      <br />
+      <input type="checkbox" name="breakfastChoice" value="toast" /> Toast
+      <input type="checkbox" name="breakfastChoice" value="cereal" /> Cereal
+      <input type="checkbox" name="breakfastChoice" value="eggs" /> Eggs
+
+      <!-- Buttons to reset, submit and do nothing-->
+      <button type="submit" name="submitBtn">Submit</button>
+      <button type="reset" name="resetBtn">Not good :(</button>
+      <button type="button" name="defaultBtn">does nothing</button>
+    </form>
+
+    <form>
+      <textarea name="textArea" rows="7" cols="90">
+            Please enter your address
+        </textarea
+      >
+      <button type="submit" name="submitBtn">Submit</button>
+      <button type="reset" name="resetBtn">Not good :(</button>
+    </form>
+
+    <form>
+      Choose a wood type:
+      <select id="wood" name="wood">
+        <option value="blank"></option>
+        <option value="Teak">Teak</option>
+        <!-- Selected="selected" makes selected option selected -->
+        <option value="Mahogany" selected="selected">Mahogany</option>
+        <option value="Willow">Willow</option>
+        <option value="Oak">Oak</option>
+      </select>
+      <button type="submit" name="submitBtn">Submit</button>
+      <button type="reset" name="resetBtn">Reset</button>
+    </form>
+
+    <form>
+      <input type="text" autofocus="true" required />
+      <input type="text" />
+      <input type="text" />
+
+      <button type="submit" name="submitBtn">Submit</button>
+      <button type="reset" name="resetBtn">Reset</button>
+    </form>
+
+    <form>
+      <input type="color" name="myColour" />
+      <button type="submit" name="submitBtn">Submit</button>
+      <button type="reset" name="resetBtn">Reset</button>
+    </form>
+
+    <fieldset>
+      <input type="text" id="firstText" />
+      <label for="firstText">Label for First Text</label>
+      <br />
+      <input type="text" id="secondText" />
+      <label for="secondText">Label for First Text</label>
+      <br />
+      <input type="text" id="thirdText" />
+      <label for="thirdText">Label for First Text</label>
+      <br />
+      <input type="text" id="fourthText" />
+      <label for="fourthText">Label for First Text</label>
+    </fieldset>
+  </body>
+</html>
