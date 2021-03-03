@@ -175,6 +175,9 @@ replaceChildBtn.addEventListener('click', replaceParagraph);
 
 // Find the element we want to manipulate 
 
+let id = 7;
+
+idHeader.setAttribute('id', `${id}`);
 
 let updateAttribute = () => {
     headerClass.setAttribute('contenteditable','');
