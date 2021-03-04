@@ -108,7 +108,7 @@ fetch(`http://jsonplaceholder.typicode.com/posts/${id}`,{
 let postData = (data) => {
     let newTitle = document.createElement('h3');
     let newBody = document.createElement('p');
-    let bodyData = data.body; 
+    let bodyData = data.body;
     let titleData = data.title;
     newTitle.innerHTML = titleData;
     newBody.innerHTML = bodyData;
@@ -116,3 +116,4 @@ let postData = (data) => {
     targetDiv.appendChild(newTitle);
     targetDiv.appendChild(newBody);
 }
+
